@@ -3,7 +3,7 @@ import bgImage from '../../assets/Untitled1.jpg'
 import { motion } from 'framer-motion'
 import bgImage2 from '../../assets/Untitled7.jpg'
 import { Helmet } from 'react-helmet-async'
-import bgImage3 from '../../assets/untitled10.jpg'
+import bgImage3 from '../../assets/Untitled10.jpg'
 const services = [
   "Brand Identity",
   "Illustration",
