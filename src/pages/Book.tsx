@@ -1,4 +1,4 @@
-import React from 'react'
+
 import img from '../../src/assets/merge 1/86676c0892f8a077c2f7dd820a383df0.jpg';
 import img2 from '../../src/assets/merge 1/b92db2613144fb9c3bcaa1992106e0b6.jpg';
 import img3 from '../../src/assets/merge 1/3589af74f154168e32d257537dc525d4.jpg';

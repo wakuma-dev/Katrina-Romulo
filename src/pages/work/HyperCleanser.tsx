@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Helmet } from 'react-helmet-async'
 import Section from './components/Section'
 import bgImage from '../../assets/Untitled.jpg'

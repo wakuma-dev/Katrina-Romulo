@@ -1,4 +1,3 @@
-import React from 'react'
 import Section from './components/Section'
 import bgImage from '../../assets/Untitled1.jpg'
 import { motion } from 'framer-motion'

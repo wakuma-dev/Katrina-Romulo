@@ -1,13 +1,16 @@
-import React, { useReducer } from "react";
+import { useReducer } from "react";
+import type { ChangeEvent, FormEvent } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { motion } from "framer-motion";
 
-enum SocialMedia {
-  youtube = "youtube",
-  instagram = "instagram",
-  tiktok = "tiktok",
-  pinterest = "pinterest",
-}
+const SocialMedia = {
+  youtube: "youtube",
+  instagram: "instagram",
+  tiktok: "tiktok",
+  pinterest: "pinterest",
+} as const;
+
+type SocialMedia = (typeof SocialMedia)[keyof typeof SocialMedia];
 
 type FormState = {
   firstName: string;
@@ -49,11 +52,11 @@ function reducer(state: FormState, action: FormAction): FormState {
   }
 }
 
-const FooterForm = () => {
+export default function FooterForm() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     dispatch({
       type: "SET_FIELD",
@@ -62,7 +65,7 @@ const FooterForm = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     console.log(state);
     dispatch({ type: "RESET" });
@@ -168,7 +171,7 @@ const FooterForm = () => {
         />
       </div>
 
-      {/* SOCIAL MEDIA ENUM SELECT */}
+      {/* SOCIAL MEDIA */}
       <div className="flex flex-col gap-2 w-full relative">
         <label className="text-[14px] font-sans">
           How did you find me?{" "}
@@ -212,5 +215,3 @@ const FooterForm = () => {
     </motion.form>
   );
 };
-
-export default FooterForm;

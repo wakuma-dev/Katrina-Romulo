@@ -1,4 +1,3 @@
-import React from 'react';
 import useMenuStore from '../../../app/store/useMenuStore';
 import navLinks from '../../../data/navLinks';
 import { NavLink } from 'react-router-dom';

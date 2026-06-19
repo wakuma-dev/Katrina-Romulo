@@ -1,4 +1,3 @@
-import React from 'react';
 import Logo from './Logo';
 import NavMenu from './NavMenu';
 import SocialLinks from './SocialLinks';

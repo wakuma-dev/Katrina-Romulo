@@ -1,4 +1,3 @@
-import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import WorkDesc from './components/WorkDesc'
 import WorkProduct from './components/WorkProduct'

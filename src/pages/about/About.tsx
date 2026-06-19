@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Helmet } from 'react-helmet-async'
 import AboutHero from './components/AboutHero'
 import AboutService from './components/AboutService'
