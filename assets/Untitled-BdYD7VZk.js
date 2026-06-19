@@ -1,0 +1,1 @@
+var e=`/Katrina-Romulo/assets/Untitled-Bv5vQSsK.jpg`;export{e as t};
